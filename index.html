@@ -7,15 +7,25 @@
   </head>
   
   <body bgcolor="#FBE0C3">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination" align="center">
-        <li class="page-item"><a class="page-link" href="https://jie0519.github.io/">主頁</a></li>
-        <li class="page-item"><a class="page-link" href="https://jeffrey113.github.io/RareDogs1.github.io">一、藏獒</a></li>
-        <li class="page-item"><a class="page-link" href="https://jeffrey113.github.io/RareDogs.github.io">二、捷克斯洛伐克狼犬</a></li>
-        <li class="page-item"><a class="page-link" href="https://jeffrey113.github.io/RareDogs2.github.io">三、羅秦犬</a></li>
-        <li class="page-item"><a class="page-link" href="https://jeffrey113.github.io/RareDogs3.github.io">四、馬地犬</a></li>
-        <li class="page-item"><a class="page-link" href="https://jeffrey113.github.io/RareDogs4.github.io">五、奧達獵犬</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="navbar-section">
+        <a href="https://jie0519.github.io/">主頁</a>
+      </div>
+      <div class="navbar-section">
+        <a href="https://jeffrey113.github.io/RareDogs1.github.io">一、藏獒</a>
+      </div>
+      <div class="navbar-section">
+        <a href="https://jeffrey113.github.io/RareDogs.github.io">二、捷克斯洛伐克狼犬</a>
+      </div>
+      <div class="navbar-section">
+        <a href="https://jeffrey113.github.io/RareDogs2.github.io">三、羅秦犬</a>
+      </div>
+      <div class="navbar-section">
+        <a href="https://jeffrey113.github.io/RareDogs3.github.io">四、馬地犬</a>
+      </div>
+      <div class="navbar-section">
+        <a href="https://jeffrey113.github.io/RareDogs4.github.io">五、奧達獵犬</a>
+      </div>
     </nav>
     <div class="wel">
     <h1>珍稀犬種的世界</h1>
@@ -49,7 +59,7 @@
   </body>
 </html>
 <style>
-  h1, h2, .space, .space2, .con, .button, .top, .intro{
+  .navbar, h1, h2, .space, .space2, .con, .button, .top, .intro{
     text-align: center;
   }
   .wel{
@@ -83,9 +93,29 @@
   background-color: #7D8E95;
   border-color: #7D8E95;
   }
-  li{
-    background: #FBE0C3;
-    display: inline-block;
+  .navbar{
+    positon: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: auto;
+    color: #000; 
+    z-index: 1; 
+    display: flex; 
+    justify-content: space-around;
   }
-
+  .navbar-section{
+    flex: 1;
+    margin: auto;
+    padding: 10px;
+    border: none;
+  }
+  .navbar-section:hover{
+    background: rgba(255, 255, 255, 0.6);
+    transition:0.3s;
+  }
+  a{
+    text-decoration: none;
+    color: #645354;
+  }
 </style>
